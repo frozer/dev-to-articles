@@ -11,7 +11,7 @@ So, singleton pattern allows us to create single instance of particular class. F
 which purposes  can it be helpful? We are using them for:
 
 * data interchange services, which take care about data transferring to/from underlying services
-* data processing services, which can be instanciated only once on application start
+* data processing services, which can be instantiated only once on application start
 * cache services
 * testing purposes
 
@@ -42,19 +42,18 @@ class SingletoneService {
 }
 ```
 So, how does it work? In the main program we can create instance of 
-singleton by calling this ```getInstance``` method with arguments (if we need them):
+singleton by calling this *getInstance* method with arguments (if we need them):
 ```
 function main() {
   const instance = SingletoneService.getInstance();
   
   instance.doSomething();
 }
-
 main();
 ```
-By calling the ```getInstance``` method it checks for static ```instance``` field 
-value of class SingletoneService, and then instanciate a new object based on that 
-class using the ```new``` keyword. If it exists, it simply returns the existing instance.
+By calling the *getInstance* method it checks for static **instance** field 
+value of class SingletoneService, and then instantiate a new object based on that 
+class using the *new* keyword. If it exists, it simply returns the existing instance.
 
 Now, once the draft implementation is done, try to move this functionality into our
 CacheService:
