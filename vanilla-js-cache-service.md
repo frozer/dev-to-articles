@@ -1,4 +1,7 @@
-* Preface
+|Status|Link|
+| ----------- | ----------- |
+|Published|https://dev.to/frozer/vanilla-js-data-cache-service-1ei2|
+
 Hi Team,
 
 Some time ago I faced an interesting task to solve, and today I'd like to share what I found. Let's imagine that we have a service which needs to load some data (sounds familiar, huh?), 
